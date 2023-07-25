@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    color: #fff;
+    background-color: #20242d;
+    overflow: hidden;
+}
+
+
+.startModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    height: 100dvh;
+    width: 100dvw;
+}
+.descriptionContainer{
+    padding: 30px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #272d39;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameDescription{
+    padding-bottom: 17px;
+    font-size: 8dvw;
+}
+.startGame{    
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4986f5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fieldContainer{
+   height: 1%;
+    width: 1%;
+    z-index: -1;
+margin-top: 45px;
+}
+
+.field{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap: 5px;
+}
+
+.cell{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+   background-color: #606c7c;
+   border-radius: 10px;
+}
+
+.fill{
+    background-color: #0f1113;
+}

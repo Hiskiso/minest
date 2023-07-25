@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minetik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="startModal">
+        <div class="descriptionContainer">
+            <div class="gameDescription">
+                Игра сапер
+            </div>
+            <div class="settings">
+                <input id="size" min="10" oninput="{this.nextElementSibling.value = this.value + ' X ' + this.value; this.nextElementSibling.nextElementSibling.max = Math.floor((this.value*this.value)/1.42857143); this.nextElementSibling.nextElementSibling.nextElementSibling.value = Math.floor((this.value*this.value)/1.42857143)}" value="10" max="100" type="range">
+                <output>10 X 10</output>
+                <input id="mines" oninput="this.nextElementSibling.value = this.value" value="10"min="1" max="69" type="range">
+                <output>10</output>
+            </div>
+            <button onclick="gameStart()" class="startGame">Играть</button>
+        </div>
+    </div>
+    <div class="fieldContainer">
+        <div class="field">
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+        <div class="cell fill"></div>
+    </div>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
